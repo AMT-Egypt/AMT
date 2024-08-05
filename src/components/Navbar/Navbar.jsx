@@ -15,7 +15,7 @@ export default function Navbar() {
 
     return (
         <header className="Navbar">
-            <div className='logo'><AnimateLogo/></div>
+            <img className="logo" src={logo} alt="logo" />
             <div className='menuIcon' onClick={handleMenuToggle}>
                 {menuVisible ? '' : <i className="fa-solid fa-bars"></i>}
             </div>
@@ -33,6 +33,14 @@ export default function Navbar() {
                         <div>Contact us</div>
                         <div className='shareIcon'><i className="fa-solid fa-share"></i></div>
                     </a>
+                    <div className='socialMediaMenu'>
+                        <div>facebook</div>
+                        <div>What's App</div>
+                        <div>Github</div>
+                        <div>Behince</div>
+                        <div>Behince</div>
+
+                    </div>
                 </li>
             </ul>
         </header>

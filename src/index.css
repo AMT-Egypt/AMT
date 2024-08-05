@@ -18,6 +18,7 @@ code {
   box-sizing: border-box;
   transition: 0.2s;
   user-select: none;
+  outline: none;
 }
 html {
   font-size: 16px;
@@ -29,9 +30,8 @@ section {
 }
 span {
   font-weight: bold;
-  color: red;
+  color: #f12d03;
 }
-
 @media (max-width: 326px) and (max-width: 425px) {
   html {
     font-size: 10px;

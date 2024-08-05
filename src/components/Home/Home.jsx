@@ -1,18 +1,16 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import "./Home.css";
-import Button from "../Button/Button";
 
 export default function App() {
     return (
         <>
             <Navbar />
-            {/* <img className='shadow' src={Shadow} alt="Shadow" /> */}
             <section className="home_sec">
                 <div className="title">
                     <h1>Transform Our Brand Presence With Powerful Visual Stories <span>Experience</span></h1>
                     <p>We empower brands by creating compelling visual identities that tell your unique story making your brand unforgettable.</p>
-                    <div><Button h={5} w={10} title={"Contact Us"} event={() => window.open("https://wa.me/+201019472864")} /></div>
+                    <div> <button className="contactBtn">Contact us</button> </div>
                 </div>
                 <div className="IconsParent">
                     <div><i className="fa-brands fa-github"></i></div> {/* GitHub */}
