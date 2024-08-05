@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import "./Navbar.css";
 import logo from "../assets/logo.png";
-import Shadow from "../assets/shadow.png"
 import AnimateLogo from "../animate_Logo/AnimateLogo"
 export default function Navbar() {
     const [menuVisible, setMenuVisible] = useState(false);
@@ -17,7 +16,6 @@ export default function Navbar() {
     return (
         <header className="Navbar">
             <div className='logo'><AnimateLogo/></div>
-            <img className='shadow' src={Shadow} alt="Shadow" />
             <div className='menuIcon' onClick={handleMenuToggle}>
                 {menuVisible ? '' : <i className="fa-solid fa-bars"></i>}
             </div>
