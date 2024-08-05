@@ -13,6 +13,11 @@ export default function Navbar() {
         setMenuVisible(false);
     };
 
+
+    let handleContact = () => { window.open("https://wa.me/+201019472864"); }
+    let goToGithub = () => { window.open("https://github.com/AMT-Egypt"); }
+    let goToFacebook = () => { window.open("https://www.facebook.com/profile.php?id=61559455807819&mibextid=ZbWKwL"); }
+    let goToBehince = () => { window.open("#") } // AMT Desginer Portfolio Link
     return (
         <header className="Navbar">
             <img className="logo" src={logo} alt="logo" />
@@ -34,12 +39,10 @@ export default function Navbar() {
                         <div className='shareIcon'><i className="fa-solid fa-share"></i></div>
                     </a>
                     <div className='socialMediaMenu'>
-                        <div>facebook</div>
-                        <div>What's App</div>
-                        <div>Github</div>
-                        <div>Behince</div>
-                        <div>Behince</div>
-
+                        <div onClick={goToFacebook}>facebook</div>
+                        <div onClick={handleContact}>What's App</div>
+                        <div onClick={goToGithub}>Github</div>
+                        <div onClick={goToBehince}>Behince</div>
                     </div>
                 </li>
             </ul>

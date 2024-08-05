@@ -97,6 +97,9 @@
   color: #919193;
   text-transform: capitalize;
 }
+.socialMediaMenu :nth-child(n) {
+  cursor: pointer;
+}
 
 @media (max-width: 500px) {
   .close-menu-button {
@@ -113,5 +116,4 @@
   .socialMediaMenu {
     grid-template-columns: auto;
   }
-  
 }
