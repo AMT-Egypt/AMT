@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import "./Home.css";
+import "./Hero.css";
 
-export default function App() {
+export default function Hero() {
     return (
         <>
             <Navbar />
