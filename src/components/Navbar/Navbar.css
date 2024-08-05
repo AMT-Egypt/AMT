@@ -1,0 +1,87 @@
+.Navbar {
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  align-content: center;
+  z-index: 999;
+}
+
+.Navbar ul {
+  /* MENU */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: white;
+  overflow: hidden;
+  overflow-y: hidden;
+  height: 0;
+  width: 28rem;
+  justify-content: center;
+  align-items: start;
+  padding: 0 2rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  overflow-y: scroll;
+  transition: height 0.3s ease;
+}
+
+.Navbar ul.show-menu {
+  height: 31rem;
+  padding: 2rem; /* Add padding when menu is visible */
+  z-index: 999;
+}
+
+.Navbar ul li {
+  list-style: none;
+}
+
+.Navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.Navbar ul li a:hover {
+  color: red;
+}
+
+.contactUS {
+  width: 25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shareIcon {
+  font-size: 1.5rem;
+}
+
+.menuIcon {
+  font-size: 3rem;
+  color: red;
+  cursor: pointer;
+  position: fixed;
+  right: 7%;
+  top: 3%;
+  z-index: 999;
+}
+
+.close-menu-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  align-self: flex-end;
+  z-index: 99;
+}
+.logo {
+  height: 5rem;
+  padding: 1rem;
+  width: 9rem;
+  object-fit: cover;
+  margin: 2rem;
+}
+.shadow {
+  height: 50.4rem;
+  position: absolute;
+  right: 0;
+}

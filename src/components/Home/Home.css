@@ -1,0 +1,38 @@
+.home_sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  height: 24rem;
+  width: 69rem;
+  padding: 3rem;
+  font-size: 2rem;
+  gap: 2rem;
+}
+.title p {
+  width: 38rem;
+  font-size: 1.2rem;
+  color: #807f82;
+}
+
+.IconsParent {
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  width: 7.9rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 2rem;
+  z-index: 20;
+}
+.IconsParent i {
+  cursor: pointer;
+}
+.IconsParent i:hover {
+  color: red;
+}
