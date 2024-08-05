@@ -130,11 +130,39 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    max-width: 30rem;
+  }
+  .title .h1 {
+    font-size: 2rem;
   }
   .talkAbout {
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+  }
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  .home_sec :nth-child(n) {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 25rem;
+  }
+  .title .h1 {
+    font-size: 3rem;
+  }
+  .talkAbout {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  html {
+    font-size: 12px;
   }
 }

@@ -8,7 +8,7 @@ export default function App() {
             <Navbar />
             <section className="home_sec">
                 <div className="title">
-                    <h1>Transform Our Brand Presence With Powerful Visual Stories <span>Experience</span></h1>
+                    <h1 className="h1">Transform Our Brand Presence With Powerful Visual Stories <span>Experience</span></h1>
                     <p>We empower brands by creating compelling visual identities that tell your unique story making your brand unforgettable.</p>
                     <div> <button className="contactBtn">Contact us</button> </div>
                 </div>
