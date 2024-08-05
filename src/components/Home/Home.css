@@ -1,38 +1,92 @@
 .home_sec {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   color: white;
+  text-align: center;
+  padding: 2rem;
 }
+
+/* Adjust for larger screens */
+@media (min-width: 768px) {
+  .home_sec {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .title {
+    align-items: flex-start;
+  }
+}
+
 .title {
   display: flex;
   flex-direction: column;
-  height: 24rem;
-  width: 69rem;
-  padding: 3rem;
-  font-size: 2rem;
-  gap: 2rem;
+  height: auto;
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.5rem;
+  gap: 1.5rem;
+}
+.title h1 {
+  font-size: 2.5rem;
 }
 .title p {
-  width: 38rem;
-  font-size: 1.2rem;
+  width: 100%;
+  font-size: 1rem;
   color: #807f82;
 }
 
+@media (min-width: 768px) {
+  .title {
+    height: 24rem;
+    width: 69rem;
+    padding: 3rem;
+    font-size: 2rem;
+    gap: 2rem;
+  }
+
+  .title p {
+    width: 38rem;
+    font-size: 1.2rem;
+  }
+}
+
 .IconsParent {
-  height: 14rem;
+  height: auto;
   display: flex;
-  flex-direction: column;
-  width: 7.9rem;
+  flex-direction: row;
+  width: 100%;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  gap: 2rem;
+  gap: 1rem;
   z-index: 20;
+  padding: 2rem 0;
 }
+
 .IconsParent i {
   cursor: pointer;
 }
 .IconsParent i:hover {
   color: red;
+}
+
+@media (min-width: 768px) {
+  .IconsParent {
+    height: 14rem;
+    flex-direction: column;
+    width: 7.9rem;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .home_sec :nth-child(n) {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -24,6 +24,7 @@ html {
 section {
   min-height: 100vh;
   background: #18171c;
+  overflow: hidden;
 }
 span {
   font-weight: bold;
@@ -34,10 +35,16 @@ span {
   html {
     font-size: 10px;
   }
+  .IconsParent {
+    display: none;
+  }
 }
 @media (min-width: 426px) and (max-width: 768px) {
   html {
     font-size: 13px;
+  }
+  .IconsParent {
+    display: none;
   }
 }
 @media (min-width: 769px) and (max-width: 1200px) {
