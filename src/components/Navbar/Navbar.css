@@ -67,6 +67,7 @@
   position: fixed;
   right: 7%;
   top: 3%;
+  cursor: pointer;
   z-index: 999;
 }
 

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import "./Navbar.css";
 import logo from "../assets/logo.png";
-import AnimateLogo from "../animate_Logo/AnimateLogo"
 export default function Navbar() {
     const [menuVisible, setMenuVisible] = useState(false);
 
@@ -18,9 +17,10 @@ export default function Navbar() {
     let goToGithub = () => { window.open("https://github.com/AMT-Egypt"); }
     let goToFacebook = () => { window.open("https://www.facebook.com/profile.php?id=61559455807819&mibextid=ZbWKwL"); }
     let goToBehince = () => { window.open("#") } // AMT Desginer Portfolio Link
+    let reloadWindow = () => { window.location.reload(); }
     return (
         <header className="Navbar">
-            <img className="logo" src={logo} alt="logo" />
+            <img onClick={reloadWindow} className="logo" src={logo} alt="logo" />
             <div className='menuIcon' onClick={handleMenuToggle}>
                 {menuVisible ? '' : <i className="fa-solid fa-bars"></i>}
             </div>
