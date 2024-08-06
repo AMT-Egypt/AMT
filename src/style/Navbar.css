@@ -124,12 +124,14 @@
   }
 }
 
-@media (max-width: 422px) {
+@media (max-width: 425px) {
   .socialMediaMenu {
     grid-template-columns: auto;
     font-size: 1rem;
   }
   .Navbar ul.show-menu {
     font-size: 1rem;
+    width: 10rem;
+    z-index: 9999;
   }
 }
