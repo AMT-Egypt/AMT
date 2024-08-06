@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <>
       <img
-        style={{ userSelect: "none" }}
+        style={{ userSelect: "none",zIndex:"0" }}
         className="shadow"
         src={Shadow}
         alt="Shadow"

@@ -27,6 +27,9 @@
   /* Initially hidden */
   pointer-events: none;
   /* Prevent clicks when hidden */
+  position: fixed;
+  top: 0%;
+  right: 1%;
 }
 
 .Navbar ul.show-menu {
