@@ -1,5 +1,5 @@
 import "./Team.css"
-import image from "./../../assets/team.jpg"
+import image from "../../assets/team.jpg"
 import Carousel from "../Carousel";
 
 const Team = () => {

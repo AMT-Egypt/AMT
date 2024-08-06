@@ -50,8 +50,8 @@
     margin: 10px 0px;
 }
 span{
-    color: gray;
-    font-weight: 400;
+    color: gray !important;
+    font-weight: 400 !important;
 }
 .owl-dots {
     margin-top: 20px !important;

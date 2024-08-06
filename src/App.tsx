@@ -6,7 +6,7 @@ import Team from "./components/Team/Team";
 export default function App() {
   return (
     <>
-    <img className='shadow' src={Shadow} alt="Shadow" />
+      <img className='shadow' src={Shadow} alt="Shadow" />
       <Hero />
       <Work/>
       <Reviews/>
