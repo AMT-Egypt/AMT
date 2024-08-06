@@ -142,7 +142,7 @@
   }
 
   .title .h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .talkAbout {
@@ -162,11 +162,11 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    max-width: 25rem;
+    max-width: 20rem;
   }
 
   .title .h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .talkAbout {
@@ -177,6 +177,13 @@
   }
 
   html {
-    font-size: 12px;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 706px) {
+  .title .h1 {
+    font-size: 3.5rem;
+    width: 63rem;
   }
 }

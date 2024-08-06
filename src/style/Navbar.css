@@ -110,7 +110,7 @@
 
 @media (max-width: 500px) {
   .close-menu-button {
-    width: 11rem;
+    width: 10rem;
     position: fixed;
     top: 1%;
     right: -2%;
@@ -124,5 +124,9 @@
 @media (max-width: 422px) {
   .socialMediaMenu {
     grid-template-columns: auto;
+    font-size: 1rem;
+  }
+  .Navbar ul.show-menu {
+    font-size: 1rem;
   }
 }
