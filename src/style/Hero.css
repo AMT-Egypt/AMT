@@ -29,19 +29,37 @@
   padding: 2rem;
   font-size: 1.5rem;
   gap: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
+
 .title h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
+
 .title p {
-  width: 100%;
+  width: 39rem;
   font-size: 1rem;
   color: #807f82;
 }
 
+.contactBtn {
+  height: 4rem;
+  width: 11rem;
+  border-radius: 0;
+  background: #f12d03;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .title {
-    height: 24rem;
+    height: 29rem;
     width: 69rem;
     padding: 3rem;
     font-size: 2rem;
@@ -70,9 +88,11 @@
 .IconsParent i {
   cursor: pointer;
 }
+
 .IconsParent i:hover {
-  color: red;
+  color: #f12d03;
 }
+
 .shadow {
   height: 39.4rem;
   position: absolute;
@@ -87,19 +107,22 @@
     gap: 2rem;
   }
 }
+
 .talkAbout {
   display: flex;
   min-height: 47vh;
   justify-content: space-between;
   align-items: center;
 }
+
 .talkAbout :nth-child(1) {
   width: 69.2rem;
   font-size: 2rem;
   padding: 4rem;
-  color: red;
+  color: #f12d03;
   text-align: start;
 }
+
 .talkAbout :nth-child(2) {
   color: white;
   min-height: 6rem;
@@ -115,11 +138,45 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    max-width: 30rem;
   }
+
+  .title .h1 {
+    font-size: 2rem;
+  }
+
   .talkAbout {
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+  }
+
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  .home_sec :nth-child(n) {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 25rem;
+  }
+
+  .title .h1 {
+    font-size: 3rem;
+  }
+
+  .talkAbout {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  html {
+    font-size: 12px;
   }
 }

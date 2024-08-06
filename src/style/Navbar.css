@@ -5,6 +5,7 @@
   align-content: center;
   z-index: 999;
 }
+
 .Navbar ul {
   /* MENU */
   display: flex;
@@ -21,13 +22,23 @@
   font-size: 2rem;
   border-radius: 10px;
   overflow-y: scroll;
-  transition: height 0.3s ease;
+  transition: height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  /* Initially hidden */
+  pointer-events: none;
+  /* Prevent clicks when hidden */
 }
 
 .Navbar ul.show-menu {
-  height: 31rem;
-  padding: 2rem; /* Add padding when menu is visible */
+  padding: 2rem;
   z-index: 999;
+  min-height: 36rem;
+  width: 29rem;
+  font-weight: 300;
+  opacity: 1;
+  /* Fully visible */
+  pointer-events: auto;
+  /* Enable clicks when visible */
 }
 
 .Navbar ul li {
@@ -40,7 +51,7 @@
 }
 
 .Navbar ul li a:hover {
-  color: red;
+  color: #f12d03;
 }
 
 .contactUS {
@@ -56,11 +67,12 @@
 
 .menuIcon {
   font-size: 3rem;
-  color: red;
+  color: #f12d03;
   cursor: pointer;
   position: fixed;
   right: 7%;
   top: 3%;
+  cursor: pointer;
   z-index: 999;
 }
 
@@ -72,16 +84,45 @@
   align-self: flex-end;
   z-index: 99;
 }
+
 .logo {
   height: 5rem;
   padding: 1rem;
   width: 9rem;
   object-fit: cover;
-  margin: 2rem;
+  margin: 1.1rem 4rem;
 }
 
-@media (max-width: 600px) {
+.socialMediaMenu {
+  height: 4rem;
+  display: grid;
+  font-size: 1.2rem;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  margin-top: 2rem;
+  color: #919193;
+  text-transform: capitalize;
+}
+
+.socialMediaMenu :nth-child(n) {
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
   .close-menu-button {
     width: 11rem;
+    position: fixed;
+    top: 1%;
+    right: -2%;
+  }
+
+  .socialMediaMenu {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 422px) {
+  .socialMediaMenu {
+    grid-template-columns: auto;
   }
 }

@@ -12,24 +12,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   transition: 0.2s;
   user-select: none;
+  outline: none;
 }
+
 html {
   font-size: 16px;
 }
+
 section {
   min-height: 100vh;
   background: #18171c;
   overflow: hidden;
 }
+
 span {
   font-weight: bold;
-  color: red;
+  color: #f12d03;
 }
 
 @media (max-width: 326px) and (max-width: 425px) {
@@ -37,24 +42,29 @@ span {
     font-size: 10px;
   }
 }
+
 @media (min-width: 426px) and (max-width: 768px) {
   html {
     font-size: 12px;
   }
+
   .IconsParent {
     display: none;
   }
 }
+
 @media (min-width: 769px) and (max-width: 1200px) {
   html {
     font-size: 15px;
   }
 }
+
 @media (min-width: 1201px) and (max-width: 1600px) {
   html {
     font-size: 16px;
   }
 }
+
 @media (min-width: 1601px) {
   html {
     font-size: 18px;

@@ -1,25 +1,26 @@
 import Shadow from "../../assets/shadow.png";
-import "../../style/Home.css";
-import Button from "../Button/Button";
-import Navbar from "../Navbar/Navbar";
-
+import "../../style/Hero.css";
+import NavBar from "../NavBar";
 
 export default function Hero() {
+  let handleContact = () => { window.open("https://wa.me/+201019472864"); }
+  let goToGithub = () => { window.open("https://github.com/AMT-Egypt"); }
+  let goToFacebook = () => { window.open("https://www.facebook.com/profile.php?id=61559455807819&mibextid=ZbWKwL"); }
+
   return (
     <>
       <img className='shadow' src={Shadow} alt="Shadow" />
-      <Navbar />
-      {/* <img className='shadow' src={Shadow} alt="Shadow" /> */}
+      <NavBar />
       <section className="home_sec">
         <div className="title">
-          <h1>Transform Our Brand Presence With Powerful Visual Stories <span>Experience</span></h1>
+          <h1 className="h1">Transform Our Brand Presence With Powerful Visual Stories <span>Experience</span></h1>
           <p>We empower brands by creating compelling visual identities that tell your unique story making your brand unforgettable.</p>
-          <div><Button h={5} w={10} title={"Contact Us"} event={() => window.open("https://wa.me/+201019472864")} /></div>
+          <div> <button onClick={handleContact} className="contactBtn">Contact us</button> </div>
         </div>
         <div className="IconsParent">
-          <div><i className="fa-brands fa-github"></i></div> {/* GitHub */}
-          <div><i className="fa-brands fa-whatsapp"></i></div> {/* WhatsApp */}
-          <div><i className="fa-brands fa-facebook"></i></div> {/* Facebook */}
+          <div onClick={goToGithub}><i className="fa-brands fa-github"></i></div> {/* GitHub */}
+          <div onClick={handleContact}><i className="fa-brands fa-whatsapp"></i></div> {/* WhatsApp */}
+          <div onClick={goToFacebook}><i className="fa-brands fa-facebook"></i></div> {/* Facebook */}
         </div>
       </section>
       <main className="talkAbout">
