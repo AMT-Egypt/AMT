@@ -3,12 +3,12 @@
 	min-height: 80vh;
 	position: relative;
 }
-.image {
+.image-c {
 	position: absolute;
 	right: 0;
 	top: 0;
 }
-.image img {
+.image-c img {
 	max-width: 100%;
 	opacity: 0.8;
 }
@@ -48,8 +48,7 @@ hr {
 	letter-spacing: -1px;
 }
 .state-card p span {
-	color: inherit;
-	font-weight: inherit;
+	color: white !important;
 }
 
 @media (min-width: 1920px) {

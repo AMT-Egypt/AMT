@@ -1,11 +1,11 @@
 import StateCard from '../../components/state_card/state_card';
-import blurSpot from '../../components/assets/blur-spot.png';
+import blurSpot from '../../assets/blur-spot.png';
 import './style.css';
 
 const StatesSection = () => {
 	return (
 		<section className='stats-section'>
-			<div className='image'>
+			<div className='image-c'>
 				<img src={blurSpot} alt='Red Circle Spot' />
 			</div>
 			<p>

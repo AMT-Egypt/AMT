@@ -1,4 +1,4 @@
-import handImage from '../../components/assets/hand-holding.png';
+import handImage from '../../assets/hand-holding.png';
 import './style.css';
 const ContactUs = () => {
 	return (
