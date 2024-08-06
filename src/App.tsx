@@ -13,8 +13,8 @@ export default function App() {
 			<img className='shadow' src={Shadow} alt='Shadow' />
 			<Hero />
 			<Work />
-			<StatesSection />
 			<Services />
+			<StatesSection />
 			<Reviews />
 			<Team />
 			<ContactUs />

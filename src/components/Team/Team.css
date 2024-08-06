@@ -1,5 +1,6 @@
 .team{
     padding:4rem;
+    background-color: #151418;
 }
 @media(max-width:767px){
     .team {
