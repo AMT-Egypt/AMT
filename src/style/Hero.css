@@ -34,14 +34,17 @@
   font-weight: 500;
   font-style: normal;
 }
+
 .title h1 {
   font-size: 4rem;
 }
+
 .title p {
   width: 39rem;
   font-size: 1rem;
   color: #807f82;
 }
+
 .contactBtn {
   height: 4rem;
   width: 11rem;
@@ -85,9 +88,11 @@
 .IconsParent i {
   cursor: pointer;
 }
+
 .IconsParent i:hover {
   color: #f12d03;
 }
+
 .shadow {
   height: 39.4rem;
   position: absolute;
@@ -102,12 +107,14 @@
     gap: 2rem;
   }
 }
+
 .talkAbout {
   display: flex;
   min-height: 47vh;
   justify-content: space-between;
   align-items: center;
 }
+
 .talkAbout :nth-child(1) {
   width: 69.2rem;
   font-size: 2rem;
@@ -115,6 +122,7 @@
   color: #f12d03;
   text-align: start;
 }
+
 .talkAbout :nth-child(2) {
   color: white;
   min-height: 6rem;
@@ -132,15 +140,18 @@
     align-items: center;
     max-width: 30rem;
   }
+
   .title .h1 {
     font-size: 2rem;
   }
+
   .talkAbout {
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
   }
+
   html {
     font-size: 14px;
   }
@@ -153,15 +164,18 @@
     align-items: center;
     max-width: 25rem;
   }
+
   .title .h1 {
     font-size: 3rem;
   }
+
   .talkAbout {
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
   }
+
   html {
     font-size: 12px;
   }
