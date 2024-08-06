@@ -1,0 +1,49 @@
+.work {
+    padding: 4rem;
+}
+@media(max-width:767px){
+    .work {
+        padding: 4rem 2rem;
+    }
+}
+.titleH1{
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 20px;
+}
+.back {
+    background-image: url("../assets/work.jpeg");
+    background-size: cover;
+    height: 350px;
+    position: relative;
+}
+.absult {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(229, 231, 235, 0), rgba(17, 24, 39, 0.1), rgba(26, 28, 41, 0.8));
+}
+.absult h1{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.absult p{
+    color: gray;
+    font-size: 15px;
+}
+.owl-dots {
+    margin-top: 40px;
+}
+.owl-dots .owl-dot span {
+    background-color: inherit !important;
+    border: 2px solid white !important;
+    width: 12px !important;
+    height: 12px !important;
+    margin: 3px !important;
+}
+.owl-dots .active span {
+    background-color: hsl(27,34%,59%) !important;
+}
