@@ -1,6 +1,6 @@
 import Shadow from "../../assets/shadow.png";
 import "../../style/Hero.css";
-import NavBar from "../Navbar";
+import NavBar from "../NavBar/NavBar";
 
 export default function Hero() {
   let handleContact = () => { window.open("https://wa.me/+201019472864"); }
