@@ -1,5 +1,5 @@
 import Hero from './components/Hero/Hero';
-import Shadow from './components/assets/shadow.png';
+import Shadow from './assets/shadow.png';
 export default function App() {
 	return (
 		<>

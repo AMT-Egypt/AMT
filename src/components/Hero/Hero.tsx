@@ -1,6 +1,6 @@
 import Shadow from '../../assets/shadow.png';
 import '../../style/Hero.css';
-import NavBar from '../NavBar/NavBar';
+import NavBar from '../Navbar/NavBar';
 
 export default function Hero() {
 	let handleContact = () => {

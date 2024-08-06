@@ -25,18 +25,17 @@ code {
 html {
 	font-size: 16px;
 }
-<<<<<<< HEAD:src/index.css
+
 section:not(.stats-section) {
 	min-height: 100vh;
 	background: #18171c;
 	overflow: hidden;
-=======
+}
 
 section {
-  min-height: 100vh;
-  background: #18171c;
-  overflow: hidden;
->>>>>>> main:src/style/index.css
+	min-height: 100vh;
+	background: #18171c;
+	overflow: hidden;
 }
 
 span {
@@ -51,22 +50,20 @@ span {
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
-<<<<<<< HEAD:src/index.css
 	html {
 		font-size: 12px;
 	}
 	.IconsParent {
 		display: none;
 	}
-=======
-  html {
-    font-size: 12px;
-  }
 
-  .IconsParent {
-    display: none;
-  }
->>>>>>> main:src/style/index.css
+	html {
+		font-size: 12px;
+	}
+
+	.IconsParent {
+		display: none;
+	}
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
@@ -82,14 +79,7 @@ span {
 }
 
 @media (min-width: 1601px) {
-<<<<<<< HEAD:src/index.css
 	html {
 		font-size: 18px;
 	}
 }
-=======
-  html {
-    font-size: 18px;
-  }
-}
->>>>>>> main:src/style/index.css
