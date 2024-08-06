@@ -35,3 +35,28 @@ export const LogoIcon = () => {
         </svg>
     )
 }
+
+export const TwoLinesIcon = () => {
+    return (
+        <svg width="49" height="61" viewBox="0 0 49 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.625 38.125H47.375M1.625 22.875H47.375" stroke="#F12D03" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    )
+}
+
+export const CloseIcon = () => {
+    return (
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M38 10L10 38" stroke="#F12D03" stroke-width="2" stroke-linecap="round" />
+            <path d="M10 10L38 38" stroke="#F12D03" stroke-width="2" stroke-linecap="round" />
+        </svg>
+    )
+}
+
+export const ContactUsIcon = () => {
+    return (
+        <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.29289 7.79289C1.90237 8.18342 1.90237 8.81658 2.29289 9.20711C2.68342 9.59763 3.31658 9.59763 3.70711 9.20711L2.29289 7.79289ZM11 1.5C11 0.947715 10.5523 0.5 10 0.5H1C0.447715 0.5 0 0.947715 0 1.5C0 2.05228 0.447715 2.5 1 2.5H9V10.5C9 11.0523 9.44772 11.5 10 11.5C10.5523 11.5 11 11.0523 11 10.5V1.5ZM3.70711 9.20711L10.7071 2.20711L9.29289 0.792893L2.29289 7.79289L3.70711 9.20711Z" fill="#18171C" />
+        </svg>
+    )
+}
