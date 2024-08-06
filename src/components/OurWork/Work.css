@@ -12,7 +12,7 @@
     margin-bottom: 20px;
 }
 .back {
-    background-image: url("../assets/work.jpeg");
+    background-image: url("./../../assets/work.jpeg");
     background-size: cover;
     height: 350px;
     position: relative;
