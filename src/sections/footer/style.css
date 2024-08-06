@@ -1,0 +1,154 @@
+footer {
+	background-color: #151418;
+}
+.container {
+	padding: 6rem 4rem 1rem;
+}
+footer .social {
+	display: flex;
+	justify-content: space-between;
+}
+.brand img {
+	width: 277px;
+}
+.social h5 {
+	font-weight: 200;
+	font-size: 5.5rem;
+	line-height: 73px;
+	letter-spacing: 2px;
+	color: white;
+}
+footer .links,
+footer .site-links {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+.links a {
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 47px;
+	text-align: right;
+}
+.site-links {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.site-links a {
+	font-weight: 200;
+	color: #fff;
+	font-size: 1.875rem;
+	text-decoration: none;
+}
+.site-links a.active {
+	color: #f12d03;
+}
+footer .info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.info .c-info {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.c-info p {
+	color: white;
+	font-weight: 200;
+	font-size: 1rem;
+	line-height: 27px;
+}
+.c-info p:first-child,
+.privacy a:first-child {
+	padding: 0px 15px;
+	border-right: 1px solid #fff;
+}
+.privacy {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.privacy a {
+	font-size: 1rem;
+	font-weight: 200;
+	line-height: 27px;
+	color: #fff;
+}
+.copyrights {
+	background-color: #0f0f0f;
+	color: white;
+	font-weight: 400;
+	font-size: 0.813rem;
+	text-align: center;
+	padding: 1rem;
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 4rem 1rem 1rem;
+	}
+	.social h5 {
+		font-size: 4.5rem;
+	}
+	.site-links a {
+		font-size: 1.5rem;
+	}
+	.info .c-info {
+		flex-direction: column;
+	}
+	.privacy {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 425px) {
+	.container {
+		padding: 4rem 1rem;
+	}
+	footer .social {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+	.brand img {
+		width: 140px;
+		margin: 0 auto;
+		display: block;
+	}
+	.social h5 {
+		font-size: 2.5rem;
+		line-height: 37px;
+	}
+	.links a {
+		line-height: 37px;
+	}
+	.links li {
+		text-align: center;
+	}
+	.links li:not(:last-of-type) {
+		margin: 0.5rem 0;
+	}
+	.site-links {
+		flex-direction: column;
+		gap: 1.2rem;
+		justify-content: center;
+	}
+	.info .c-info {
+		flex-direction: column;
+	}
+	.privacy {
+		flex-direction: column;
+	}
+	.c-info p:first-child,
+	.privacy a:first-child {
+		padding: 0;
+		border: none;
+	}
+}
