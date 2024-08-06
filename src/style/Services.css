@@ -1,0 +1,203 @@
+:root {
+  --services-font-color: #18171c;
+  --services-font-weight: 700;
+  --services-font-height: 42px;
+  --services-font-size: 12vw;
+  --services-border-color: #cacaca;
+}
+
+.services {
+  background-color: white !important;
+  padding: 20px 0 !important;
+  margin: initial;
+  box-sizing: initial;
+  padding: inherit;
+}
+
+.service-general-style {
+  color: var(--services-font-color) !important;
+  font-weight: var(--services-font-weight) !important;
+  font-size: var(--services-font-size) !important;
+  line-height: var(--services-font-height) !important;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  z-index: 1;
+  transition: all 0.5s ease, opacity 1s ease;
+  transform-origin: center;
+  position: relative;
+  opacity: 1;
+}
+
+.service-container {
+  border-top: 2px solid var(--services-border-color);
+  padding: 100px 0 10px 0;
+  overflow: hidden;
+  cursor: default;
+  height: 215px;
+  position: relative;
+}
+
+.service-animated-div {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: all 1s ease-in-out;
+  z-index: 10;
+  line-height: normal !important;
+  font-size: 16px !important;
+  padding: 5%;
+}
+
+.service-container:hover .service-general-style .opacity-none {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+@keyframes moveUp {
+  from {
+    top: 100%;
+  }
+  to {
+    top: -15%;
+  }
+}
+
+@media (max-width: 475px) {
+  @keyframes moveUp {
+    from {
+      top: 100%;
+    }
+    to {
+      top: 0%;
+    }
+  }
+}
+
+.service-container:hover .service-animated-div {
+  animation: moveUp 1s ease forwards;
+}
+
+.service_head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 10px 0 50px 0;
+}
+.service_head .right,
+.service_head .left {
+  flex: 1;
+  font-weight: 400;
+}
+.service_head .right {
+  color: #f12d03;
+  font-size: 34px;
+  line-height: 42px;
+}
+.service_head .left {
+  color: #18171c;
+}
+
+@media (max-width: 767px) {
+  .service_head {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .service_head .left {
+    margin-top: 5px;
+  }
+  .service_head .right,
+  .service_head .left {
+    text-align: center;
+  }
+}
+
+.services .badge {
+  border-radius: 50px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  color: var(--services-font-color);
+  font-weight: 700;
+}
+.strategy .strategy_badge {
+  background-color: #a6ccff;
+}
+
+.strategy .service-animated-div .one,
+.strategy .service-animated-div .two,
+.strategy .service-animated-div .three,
+.strategy .service-animated-div .four {
+  display: flex;
+  align-items: center;
+}
+
+.strategy .service-animated-div .one {
+  justify-content: space-around;
+  margin-left: 30%;
+}
+.strategy .service-animated-div .two {
+  justify-content: start;
+}
+.strategy .service-animated-div .three {
+  justify-content: end;
+}
+.strategy .service-animated-div .four {
+  justify-content: space-around;
+  margin-right: 30%;
+}
+
+.design .design_badge {
+  background-color: #a6ffcb;
+}
+
+.design .service-animated-div .one,
+.design .service-animated-div .two,
+.design .service-animated-div .three,
+.design .service-animated-div .four {
+  display: flex;
+  align-items: center;
+}
+
+.design .service-animated-div .one {
+  justify-content: space-around;
+}
+.design .service-animated-div .two {
+  justify-content: space-around;
+}
+.design .service-animated-div .three {
+  justify-content: end;
+}
+.design .service-animated-div .four {
+  justify-content: space-around;
+  margin-right: 30%;
+}
+.development .development_badge {
+  background-color: #e6a6ff;
+}
+
+.development .service-animated-div .one,
+.development .service-animated-div .two,
+.development .service-animated-div .three,
+.development .service-animated-div .four {
+  display: flex;
+  align-items: center;
+}
+
+.development .service-animated-div .one {
+  justify-content: space-around;
+}
+.development .service-animated-div .two {
+  justify-content: start;
+}
+.development .service-animated-div .three {
+  justify-content: end;
+}
