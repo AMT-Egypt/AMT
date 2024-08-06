@@ -1,4 +1,4 @@
-import NavBar from '../Navbar/NavBar';
+import NavBar from '../NavBar/NavBar'; 
 import Shadow from '../../assets/shadow.png';
 import '../../style/Hero.css';
 
