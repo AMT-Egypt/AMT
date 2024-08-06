@@ -5,6 +5,7 @@
   align-content: center;
   z-index: 999;
 }
+
 .Navbar ul {
   /* MENU */
   display: flex;
@@ -22,8 +23,10 @@
   border-radius: 10px;
   overflow-y: scroll;
   transition: height 0.3s ease, opacity 0.3s ease;
-  opacity: 0; /* Initially hidden */
-  pointer-events: none; /* Prevent clicks when hidden */
+  opacity: 0;
+  /* Initially hidden */
+  pointer-events: none;
+  /* Prevent clicks when hidden */
 }
 
 .Navbar ul.show-menu {
@@ -32,8 +35,10 @@
   min-height: 36rem;
   width: 29rem;
   font-weight: 300;
-  opacity: 1; /* Fully visible */
-  pointer-events: auto; /* Enable clicks when visible */
+  opacity: 1;
+  /* Fully visible */
+  pointer-events: auto;
+  /* Enable clicks when visible */
 }
 
 .Navbar ul li {
@@ -67,6 +72,7 @@
   position: fixed;
   right: 7%;
   top: 3%;
+  cursor: pointer;
   z-index: 999;
 }
 
@@ -98,6 +104,10 @@
   text-transform: capitalize;
 }
 
+.socialMediaMenu :nth-child(n) {
+  cursor: pointer;
+}
+
 @media (max-width: 500px) {
   .close-menu-button {
     width: 11rem;
@@ -105,13 +115,14 @@
     top: 1%;
     right: -2%;
   }
+
   .socialMediaMenu {
     grid-template-columns: auto auto;
   }
 }
+
 @media (max-width: 422px) {
   .socialMediaMenu {
     grid-template-columns: auto;
   }
-  
 }

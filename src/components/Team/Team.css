@@ -1,0 +1,84 @@
+.team{
+    padding:4rem;
+}
+@media(max-width:767px){
+    .team {
+        padding: 4rem 2rem;
+    }
+}
+.flexTeam {
+    display: flex;
+    gap: 20px;
+    align-items: end;
+    margin-bottom: 40px;
+}
+.titleTeam{
+    color:#F12D03;
+    position: relative;
+    margin-bottom: 40px;
+    width: 50%;
+}
+.titleTeam::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+}
+.textTeam{
+    color: #FFFFFF;
+}
+@media(max-width:640px){
+    .flexTeam {
+        flex-direction: column;
+        align-items: start;
+    }
+    .titleTeam{
+        margin-bottom: 0px;
+    }
+}
+.image{
+    width: 100%;
+    height: 350px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.image:hover{
+    filter: grayscale(0%);
+}
+.flexCenter {
+    text-align: center;
+}
+.flexCenter h2{
+    color: #FFFFFF;
+    font-size: 22px;
+    margin-top: 5px;
+}
+.flexCenter p{
+    color: gray;
+    margin: 0px 0px 10px;
+}
+.flexCenter .link {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.flexCenter .link a{
+    color: gray;
+    text-decoration: none;
+}
+.owl-dots {
+    margin-top: 20px !important;
+}
+.owl-dots .owl-dot span {
+    background-color: inherit !important;
+    border: 2px solid gray !important;
+    width: 12px !important;
+    height: 12px !important;
+    margin: 3px !important;
+}
+.owl-dots .active span {
+    background-color: hsl(27,34%,59%) !important;
+}
