@@ -3,8 +3,7 @@ import { memo, useCallback, useEffect, useState } from 'react';
 
 const StateCard = ({ title, count }: { title: string; count: number }) => {
 	const [curCount, setCurCount] = useState(0);
-	const [shouldStart] = useScrollTrigger();
-	
+	const [shouldStart] = useScrollTrigger(50); // Trigger at 50% scroll
 	
 	const handleAnimation = useCallback(() => {
 		let start = 0;
@@ -19,20 +18,18 @@ const StateCard = ({ title, count }: { title: string; count: number }) => {
 					return;
 				}
 			}, 10);
-		} else {
-			return;
 		}
 	}, [shouldStart, count]);
 
 	useEffect(() => {
-		window.addEventListener('scroll', handleAnimation);
+		if (shouldStart) {
+			handleAnimation();
+		}
+	}, [shouldStart, handleAnimation]);
 
-		return () => window.removeEventListener('scroll', handleAnimation);
-	}, [handleAnimation]);
 	return (
 		<div className='state-card'>
 			<p>{title}</p>
-
 			<p>{curCount}</p>
 		</div>
 	);

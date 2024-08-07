@@ -47,10 +47,10 @@ export default function NavBar() {
           <a href="#/">About</a>
         </li>
         <li>
-          <a href="#/">Work</a>
+          <a href="#work">Work</a>
         </li>
         <li>
-          <a href="#/">Services</a>
+          <a href="#service">Services</a>
         </li>
         <li>
           <a href="#/">Blog</a>
@@ -58,7 +58,7 @@ export default function NavBar() {
         <div style={{ fontWeight: "400" }} className="bg_nav_menu"></div>
         <div className="hrTag"></div>
         <li>
-          <a className="contactUS" href="#/">
+          <a className="contactUS" href="#contact">
             <div>Contact us</div>
             <div className="shareIcon">
               {" "}
