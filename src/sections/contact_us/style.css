@@ -3,13 +3,16 @@
 	justify-content: space-between;
 	align-items: center;
 }
-.wraper img {
+
+.wrapper img {
 	max-width: 100%;
 	scale: 1.1;
 }
+
 .form-area {
 	padding: 0 4rem 0 0;
 }
+
 .form-area h4 {
 	line-height: 42px;
 	font-weight: 400;
@@ -26,6 +29,7 @@
 	color: #ffff;
 	margin: 0.5rem 0 2rem;
 }
+
 .form-area button {
 	background-color: #f12d03;
 	color: white;
@@ -50,43 +54,52 @@
 	font-size: 1.1rem;
 	caret-color: #f12d03;
 }
+
 .form-group {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
 	margin: 1.5rem 0;
 }
+
 .form-area textarea {
 	resize: none;
 	height: 95px;
 }
+
 @media (max-width: 1200px) {
 	.form-area h4 {
 		font-size: 2rem;
 	}
 }
+
 @media (max-width: 900px) {
 	.form-area h4 {
 		font-size: 1.2rem;
 	}
 }
+
 @media (max-width: 768px) {
 	.contact-us {
 		flex-direction: column;
 		padding: 0rem 0rem 6rem;
 	}
+
 	.form-area {
 		text-align: center;
 		padding: 1rem;
 	}
+
 	.form-area h4 {
 		font-size: 2.2rem;
 		line-height: 47px;
 	}
+
 	.form-area button {
 		margin: 2rem 0;
 	}
 }
+
 @media (max-width: 425px) {
 	.contact-us {
 		flex-direction: column;
@@ -94,20 +107,25 @@
 		align-items: center;
 		justify-content: center;
 	}
-	.wraper {
+
+	.wrapper {
 		display: none;
 	}
+
 	.form-area {
 		padding: 1rem;
 		text-align: center;
 	}
+
 	.form-area h4 {
 		font-size: 1.5rem;
 		line-height: 37px;
 	}
+
 	.form-area p {
 		font-size: 1.14rem;
 	}
+
 	.form-area button {
 		margin: 2rem 0;
 	}

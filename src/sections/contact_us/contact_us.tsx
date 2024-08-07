@@ -12,7 +12,7 @@ const ContactUs = () => {
 	let handleContact = (e: FormEvent) => {
 		e.preventDefault();
 		const check = msgValidator({
-			fullname: fullNameRef.current?.value,
+			fullName: fullNameRef.current?.value,
 			email: emailRef.current?.value,
 			phone: phoneRef.current?.value,
 			message: msgBoxRef.current?.value,
@@ -26,8 +26,8 @@ const ContactUs = () => {
 		}
 	};
 	return (
-		<section className='contact-us'>
-			<div className='wraper'>
+		<section className='contact-us' id='contact'>
+			<div className='wrapper'>
 				<img src={handImage} alt='Hand Holding Telephone' />
 			</div>
 			<div className='form-area'>

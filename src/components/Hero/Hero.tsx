@@ -12,6 +12,9 @@ export default function Hero() {
 	let goToFacebook = () => {
 		window.open('https://www.facebook.com/profile.php?id=61559455807819&mibextid=ZbWKwL');
 	};
+	let goToInstagram = () => {
+		window.open('https://www.facebook.com/profile.php?id=61559455807819&mibextid=ZbWKwL');
+	};
 
 	return (
 		<>
@@ -39,18 +42,18 @@ export default function Hero() {
 					</div>
 				</div>
 				<div className='IconsParent'>
-					<div onClick={goToGithub}>
-						<i className='fa-brands fa-github'></i>
-					</div>{' '}
-					{/* GitHub */}
-					<div onClick={handleContact}>
-						<i className='fa-brands fa-whatsapp'></i>
-					</div>{' '}
-					{/* WhatsApp */}
 					<div onClick={goToFacebook}>
 						<i className='fa-brands fa-facebook'></i>
 					</div>{' '}
-					{/* Facebook */}
+					<div onClick={goToInstagram}>
+						<i className='fa-brands fa-instagram'></i>
+					</div>{' '}
+					<div onClick={goToGithub}>
+						<i className='fa-brands fa-github'></i>
+					</div>{' '}
+					<div onClick={handleContact}>
+						<i className='fa-brands fa-whatsapp'></i>
+					</div>{' '}
 				</div>
 			</section>
 			<main className='talkAbout'>

@@ -1,13 +1,15 @@
-import Hero from './components/Hero/Hero';
+import { ToastContainer } from 'react-toastify';
 import Shadow from './assets/shadow.png';
+import Hero from './components/Hero/Hero';
 import Work from './components/OurWork/Work';
 import Reviews from './components/Reviews/Reviews';
-import Team from './components/Team/Team';
 import Services from './components/Services/Services';
-import StatesSection from './sections/stats_section/stats_section';
+import Team from './components/Team/Team';
 import ContactUs from './sections/contact_us/contact_us';
 import Footer from './sections/footer/footer';
-import { ToastContainer } from 'react-toastify';
+import StatesSection from './sections/stats_section/stats_section';
+import "./style/App.css";
+
 export default function App() {
 	return (
 		<>

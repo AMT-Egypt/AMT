@@ -5,8 +5,8 @@ import ServiceHead from "./Service.head";
 import ServiceStrategy from "./Service.strategy";
 const Services = () => {
     return (
-        <div className="services">
-            <ServiceHead/>
+        <div className="services" id="service">
+            <ServiceHead />
             <ServiceStrategy />
             <ServiceDesign />
             <ServiceDevelopment />

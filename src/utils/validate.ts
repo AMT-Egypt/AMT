@@ -1,5 +1,5 @@
 type formDataType = {
-    fullname: string | undefined,
+    fullName: string | undefined,
     email: string | undefined,
     phone: string | undefined,
     message: string | undefined
@@ -7,7 +7,7 @@ type formDataType = {
 const msgValidator = (formData: formDataType): boolean => {
 
 
-    if (formData.fullname === '' || formData.email === '' || formData.phone === '' || formData.message === '') {
+    if (formData.fullName === '' || formData.email === '' || formData.phone === '' || formData.message === '') {
         return false
     } else {
         return true

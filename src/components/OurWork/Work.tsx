@@ -1,9 +1,9 @@
 import Carousel from "../Carousel";
-import "./Work.css"
+import "./Work.css";
 
 const Work = () => {
     return (
-        <div className="work">
+        <div className="work" id="work">
             <h1 className="titleH1">Our Work</h1>
             <Carousel>
                 <div className="back">

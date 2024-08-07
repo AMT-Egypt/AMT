@@ -4,19 +4,8 @@ import logo from "../../assets/logo.png";
 import "./style.css";
 
 const Footer = () => {
-  let goToFacebook = () => {
-    window.open(
-      "https://www.facebook.com/profile.php?id=61559455807819&mibextid=ZbWKwL"
-    );
-  };
-  let goToGithub = () => {
-    window.open("https://github.com/AMT-Egypt");
-  };
-  let handleContact = () => {
-    window.open("https://wa.me/+201019472864");
-  };
   let goToMail = () => {
-    window.open("https://amtteam@gmail.com");
+    window.open("amt.egypt1@gmail.com");
   };
 
   let [Year, setYear] = useState(0);
@@ -37,28 +26,31 @@ const Footer = () => {
           </div>
           <ul className="links">
             <li>
-              <a onClick={goToFacebook} href="#" className="active">
+              <a
+                href="https://www.facebook.com/profile.php?id=61559455807819&mibextid=ZbWKwL"
+                className="active">
                 Facebook
               </a>
             </li>
             <li>
-              <a href="#" className="active">
+              <a
+                href="https://www.facebook.com/profile.php?id=61559455807819&mibextid=ZbWKwL"
+                className="active">
                 Instagram
               </a>
             </li>
             <li>
-              <a href="#" className="active">
-                Behance
-              </a>
-            </li>
-            <li>
-              <a onClick={goToGithub} href="#" className="active">
+              <a
+                href="https://github.com/AMT-Egypt"
+                className="active">
                 Github
               </a>
             </li>
             <li>
-              <a onClick={handleContact} href="#" className="active">
-                What'sapp
+              <a
+                href="https://wa.me/+201019472864"
+                className="active">
+                Whatsapp
               </a>
             </li>
           </ul>
@@ -66,25 +58,35 @@ const Footer = () => {
         <hr />
         <ul className="site-links">
           <li className="active">
-            <a href="/" className="active">
+            <a href="#navbar" className="active">
               Home
             </a>
           </li>
           <li>
-            <a href="/">Work</a>
+            <a href="#work">
+              Work
+            </a>
           </li>
           <li>
-            <a href="/">Services</a>
+            <a href="#service">
+              Services
+            </a>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <a href="#contact">
+              Contact
+            </a>
           </li>
         </ul>
         <hr />
         <div className="info">
           <div className="c-info">
-            <p>+20 1121234656</p>
-            <p onClick={goToMail}>amtteam@gmail.com</p>
+            <a href="https://wa.me/+201019472864">
+              +201019472864
+            </a>
+            <a href="mailto:amt.egypt1@gmail.com">
+              amt.egypt1@gmail.com
+            </a>
           </div>
           <div className="privacy">
             <a href="/">Privacy Policy</a>
