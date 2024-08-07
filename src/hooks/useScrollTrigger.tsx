@@ -1,17 +1,17 @@
 import { useEffect, useState } from 'react';
 
 const useScrollTrigger = () => {
-	const [startCount, setStartCount] = useState<boolean>(false);
-
-	const ScrollTrigger = () => (window.scrollY >= 1000 ? setStartCount(true) : setStartCount(false));
+	// const [startCount, setStartCount] = useState<number>(0);
+	const [shouldStart, setShouldStart] = useState<boolean>(false);
+	const setAnimation = () => (window.scrollY >= 800 ? setShouldStart(true) : setShouldStart(false));
 
 	useEffect(() => {
-		window.addEventListener('scroll', ScrollTrigger);
+		window.addEventListener('scroll', setAnimation);
 
-		return () => window.removeEventListener('scroll', ScrollTrigger);
+		return () => window.removeEventListener('scroll', setAnimation);
 	}, []);
 
-	return [startCount];
+	return [shouldStart, setShouldStart];
 };
 
 export default useScrollTrigger;
