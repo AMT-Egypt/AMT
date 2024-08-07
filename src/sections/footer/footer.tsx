@@ -4,9 +4,6 @@ import logo from "../../assets/logo.png";
 import "./style.css";
 
 const Footer = () => {
-  let goToMail = () => {
-    window.open("amt.egypt1@gmail.com");
-  };
 
   let [Year, setYear] = useState(0);
   useEffect(() => {
