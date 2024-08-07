@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="brand">
             <img src={logo} alt="AMT EGY LOGO" />
             {/* <AMT_SVG/>  */} {/*Animated Logo SVG*/}
-            <h5>Let’s a talk</h5>
+            <h5>Let’s talk</h5>
           </div>
           <ul className="links">
             <li>
