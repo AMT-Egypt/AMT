@@ -64,7 +64,7 @@
 
 .form-area textarea {
 	resize: none;
-	height: 95px;
+	height: 48px;
 }
 
 @media (max-width: 1200px) {
