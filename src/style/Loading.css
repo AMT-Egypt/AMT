@@ -1,0 +1,58 @@
+.loader,
+.loader::before,
+.loader::after {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  animation: rotate 3s linear infinite;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-color: #f12d03;
+}
+.loader::before,
+.loader::after {
+  position: absolute;
+  content: "";
+}
+
+.loader::before {
+  border-color: #35a2d2;
+  width: 110%;
+  height: 110%;
+  animation-delay: 0.5s;
+}
+
+.loader::after {
+  border-color: #9c40fc;
+  width: 120%;
+  height: 120%;
+  animation-delay: 0.1s;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingSec {
+  width: 100%;
+  background: #18171c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  z-index: 9999;
+}
+
+
+
+

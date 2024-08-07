@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/Logo.svg";
 // import AMT_SVG from "../../components/AnimateLogo/AnimateLogo"; // import Animated Logo SVG
 import "./style.css";
 
 const Footer = () => {
-
   let [Year, setYear] = useState(0);
   useEffect(() => {
     let d = new Date();
@@ -25,28 +24,26 @@ const Footer = () => {
             <li>
               <a
                 href="https://www.facebook.com/profile.php?id=61559455807819&mibextid=ZbWKwL"
-                className="active">
+                className="active"
+              >
                 Facebook
               </a>
             </li>
             <li>
               <a
                 href="https://www.facebook.com/profile.php?id=61559455807819&mibextid=ZbWKwL"
-                className="active">
+                className="active"
+              >
                 Instagram
               </a>
             </li>
             <li>
-              <a
-                href="https://github.com/AMT-Egypt"
-                className="active">
+              <a href="https://github.com/AMT-Egypt" className="active">
                 Github
               </a>
             </li>
             <li>
-              <a
-                href="https://wa.me/+201019472864"
-                className="active">
+              <a href="https://wa.me/+201019472864" className="active">
                 Whatsapp
               </a>
             </li>
@@ -60,30 +57,20 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="#work">
-              Work
-            </a>
+            <a href="#work">Work</a>
           </li>
           <li>
-            <a href="#service">
-              Services
-            </a>
+            <a href="#service">Services</a>
           </li>
           <li>
-            <a href="#contact">
-              Contact
-            </a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
         <hr />
         <div className="info">
           <div className="c-info">
-            <a href="https://wa.me/+201019472864">
-              +201019472864
-            </a>
-            <a href="mailto:amt.egypt1@gmail.com">
-              amt.egypt1@gmail.com
-            </a>
+            <a href="https://wa.me/+201019472864">+201019472864</a>
+            <a href="mailto:amt.egypt1@gmail.com">amt.egypt1@gmail.com</a>
           </div>
           <div className="privacy">
             <a href="/">Privacy Policy</a>

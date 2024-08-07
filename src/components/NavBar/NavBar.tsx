@@ -1,6 +1,6 @@
 import { useState } from "react";
-import logo from "../../assets/logo.png";
-import { CloseIcon, ContactUsIcon,TwoLinesIcon } from "../../icons/icons";
+import logo from "../../assets/Logo.svg";
+import { CloseIcon, ContactUsIcon, TwoLinesIcon } from "../../icons/icons";
 import "../../style/Navbar.css";
 export default function NavBar() {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -34,7 +34,7 @@ export default function NavBar() {
     <header className="Navbar" id="navbar">
       <img onClick={reloadWindow} className="logo" src={logo} alt="logo" />
       <div className="menuIcon" onClick={handleMenuToggle}>
-        {menuVisible ? "" : <TwoLinesIcon/>}
+        {menuVisible ? "" : <TwoLinesIcon />}
       </div>
       <ul className={menuVisible ? "show-menu" : ""}>
         <button className="close-menu-button" onClick={handleCloseMenu}>
