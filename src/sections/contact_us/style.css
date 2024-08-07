@@ -1,39 +1,32 @@
 .contact-us {
 	display: flex;
 	justify-content: space-between;
-	padding: 6rem 0;
-	min-height: 70vh;
+	align-items: center;
 }
 .wraper img {
 	max-width: 100%;
 	scale: 1.1;
 }
-.text {
+.form-area {
 	padding: 0 4rem 0 0;
-	/* flex: 1; */
 }
-.text h4 {
-	line-height: 66px;
-	font-weight: 300;
-	font-size: 2.8rem;
-	color: white;
-
-	margin: 0 0 2rem 0;
-}
-h4 span {
-	display: block;
+.form-area h4 {
+	line-height: 42px;
+	font-weight: 400;
+	font-size: 2.5rem;
 	color: #f12d03;
-	font-weight: 300;
+
+	text-transform: capitalize;
 }
 
-.text p {
-	font-size: 1.25rem;
-	font-weight: 300;
-	line-height: 26px;
+.form-area p {
+	font-size: 1.1rem;
+	font-weight: 200;
+	line-height: 33px;
 	color: #ffff;
-	margin: 0 0 2rem;
+	margin: 0.5rem 0 2rem;
 }
-.text button {
+.form-area button {
 	background-color: #f12d03;
 	color: white;
 	font-size: 1rem;
@@ -42,31 +35,56 @@ h4 span {
 	border: none;
 	cursor: pointer;
 	padding: 10px;
-
 	display: block;
+	margin: 2rem 0;
 }
 
+.form-area input,
+.form-area textarea {
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid gray;
+	padding: 10px;
+	color: white;
+	font-size: 1.1rem;
+	caret-color: #f12d03;
+}
+.form-group {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin: 1.5rem 0;
+}
+.form-area textarea {
+	resize: none;
+	height: 95px;
+}
 @media (max-width: 1200px) {
-	.text h4 {
-		font-size: 2.5rem;
+	.form-area h4 {
+		font-size: 2rem;
 	}
 }
-
+@media (max-width: 900px) {
+	.form-area h4 {
+		font-size: 1.2rem;
+	}
+}
 @media (max-width: 768px) {
 	.contact-us {
 		flex-direction: column;
 		padding: 0rem 0rem 6rem;
 	}
-	.text {
+	.form-area {
 		text-align: center;
-		padding: 0;
+		padding: 1rem;
 	}
-	.text h4 {
-		font-size: 2.7rem;
+	.form-area h4 {
+		font-size: 2.2rem;
 		line-height: 47px;
 	}
-	.text button {
-		margin: auto;
+	.form-area button {
+		margin: 2rem 0;
 	}
 }
 @media (max-width: 425px) {
@@ -79,18 +97,18 @@ h4 span {
 	.wraper {
 		display: none;
 	}
-	.text {
-		padding: 0;
+	.form-area {
+		padding: 1rem;
 		text-align: center;
 	}
-	.text h4 {
-		font-size: 2.1rem;
+	.form-area h4 {
+		font-size: 1.5rem;
 		line-height: 37px;
 	}
-	.text p {
+	.form-area p {
 		font-size: 1.14rem;
 	}
-	.text button {
-		margin: 0 auto;
+	.form-area button {
+		margin: 2rem 0;
 	}
 }

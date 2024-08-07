@@ -13,7 +13,6 @@
   gap: 2rem;
   background: white;
   overflow: hidden;
-  overflow-y: hidden;
   height: 0;
   width: 28rem;
   justify-content: center;
@@ -21,7 +20,6 @@
   padding: 0 2rem;
   font-size: 2rem;
   border-radius: 10px;
-  overflow-y: scroll;
   transition: height 0.3s ease, opacity 0.3s ease;
   opacity: 0;
   /* Initially hidden */
@@ -34,7 +32,7 @@
 
 .Navbar ul.show-menu {
   padding: 2rem;
-  z-index: 999;
+  z-index: 9999;
   min-height: 36rem;
   width: 29rem;
   font-weight: 300;
@@ -73,8 +71,8 @@
   color: #f12d03;
   cursor: pointer;
   position: fixed;
-  right: 7%;
-  top: 3%;
+  right: 3.5%;
+  top: 1%;
   cursor: pointer;
   z-index: 999;
 }
@@ -86,6 +84,9 @@
   cursor: pointer;
   align-self: flex-end;
   z-index: 99;
+  position: fixed;
+  top: 1%;
+  right: 3.5%;
 }
 
 .logo {
@@ -111,12 +112,26 @@
   cursor: pointer;
 }
 
+.hrTag {
+  height: 2px;
+  background: #eee;
+  width: 100%;
+}
+.bg_nav_menu {
+  background: #eee;
+  position: absolute;
+  bottom: 0%;
+  height: 19%;
+  width: 123%;
+  margin-left: -3rem;
+  z-index: -1;
+}
+
 @media (max-width: 500px) {
   .close-menu-button {
     width: 10rem;
-    position: fixed;
     top: 1%;
-    right: -2%;
+    right: -10.5%;
   }
 
   .socialMediaMenu {
@@ -133,5 +148,8 @@
     font-size: 1rem;
     width: 10rem;
     z-index: 9999;
+  }
+  .bg_nav_menu {
+    height: 29%;
   }
 }

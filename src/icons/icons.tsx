@@ -39,7 +39,7 @@ export const LogoIcon = () => {
 export const TwoLinesIcon = () => {
     return (
         <svg width="49" height="61" viewBox="0 0 49 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.625 38.125H47.375M1.625 22.875H47.375" stroke="#F12D03" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M1.625 38.125H47.375M1.625 22.875H47.375" stroke="#F12D03" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round" />
         </svg>
     )
 }
@@ -47,8 +47,8 @@ export const TwoLinesIcon = () => {
 export const CloseIcon = () => {
     return (
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M38 10L10 38" stroke="#F12D03" stroke-width="2" stroke-linecap="round" />
-            <path d="M10 10L38 38" stroke="#F12D03" stroke-width="2" stroke-linecap="round" />
+            <path d="M38 10L10 38" stroke="#F12D03" strokeWidth="2" strokeLinecap="round" />
+            <path d="M10 10L38 38" stroke="#F12D03" strokeWidth="2" strokeLinecap="round" />
         </svg>
     )
 }
