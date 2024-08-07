@@ -112,6 +112,21 @@
   cursor: pointer;
 }
 
+.hrTag {
+  height: 2px;
+  background: #eee;
+  width: 100%;
+}
+.bg_nav_menu {
+  background: #eee;
+  position: absolute;
+  bottom: 0%;
+  height: 19%;
+  width: 123%;
+  margin-left: -3rem;
+  z-index: -1;
+}
+
 @media (max-width: 500px) {
   .close-menu-button {
     width: 10rem;
@@ -133,5 +148,8 @@
     font-size: 1rem;
     width: 10rem;
     z-index: 9999;
+  }
+  .bg_nav_menu {
+    height: 29%;
   }
 }

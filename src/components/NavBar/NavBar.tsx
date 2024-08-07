@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../../assets/logo.png";
 import "../../style/Navbar.css";
-import { ContactUsIcon,CloseIcon } from "../../icons/icons";
+import { ContactUsIcon, CloseIcon } from "../../icons/icons";
 export default function NavBar() {
   const [menuVisible, setMenuVisible] = useState(false);
 
@@ -38,7 +38,7 @@ export default function NavBar() {
       </div>
       <ul className={menuVisible ? "show-menu" : ""}>
         <button className="close-menu-button" onClick={handleCloseMenu}>
-          <CloseIcon/>
+          <CloseIcon />
         </button>
         <li>
           <a href="#/">Home</a>
@@ -55,12 +55,14 @@ export default function NavBar() {
         <li>
           <a href="#/">Blog</a>
         </li>
+        <div style={{ fontWeight: "400" }} className="bg_nav_menu"></div>
+        <div className="hrTag"></div>
         <li>
           <a className="contactUS" href="#/">
             <div>Contact us</div>
             <div className="shareIcon">
               {" "}
-              <ContactUsIcon/>
+              <ContactUsIcon />
             </div>
           </a>
           <div className="socialMediaMenu">

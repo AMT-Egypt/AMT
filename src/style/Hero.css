@@ -40,7 +40,7 @@
 }
 
 .title p {
-  width: 39rem;
+  width: 100%;
   font-size: 1rem;
   color: #807f82;
 }
@@ -145,7 +145,6 @@
   .title .h1 {
     font-size: 1.5rem;
   }
-
   .talkAbout {
     justify-content: center;
     align-items: center;
