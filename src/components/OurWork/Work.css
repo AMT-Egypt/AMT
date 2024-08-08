@@ -12,13 +12,25 @@
     margin-bottom: 20px;
 }
 .back {
-    background-image: url("../../assets/work.jpeg");
-    background-size: cover;
+    /* background-image: url("../../assets/work.jpeg");
+    background-size: cover; */
     height: 350px;
     position: relative;
+    z-index:-1;
+    cursor: pointer;
+}
+.back img {
+    z-index:-1;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
 }
 .absult {
+    z-index: 10;
     padding: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     display: flex;
     flex-direction: column;
     justify-content: end;

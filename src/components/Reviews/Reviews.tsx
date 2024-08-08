@@ -15,7 +15,7 @@ const Reviews = () => {
                         <p className="revtext">
                             Our clients’ success stories powerfully underscore our deep commitment to surpassing expectations. Explore how our expertise brings about real, impactful results that not only elevate brands but also create enduring legacies.
                         </p>
-                        <p><strong>Ahmed Hafez</strong> , <span>UX / UI Designer</span></p>
+                        <p><strong>Ahmed Hafez</strong> , <span className="job">UX / UI Designer</span></p>
                     </div>
                 </div>
                 <div>
@@ -24,7 +24,7 @@ const Reviews = () => {
                         <p className="revtext">
                             Our clients’ success stories powerfully underscore our deep commitment to surpassing expectations. Explore how our expertise brings about real, impactful results that not only elevate brands but also create enduring legacies.
                         </p>
-                        <p><strong>Ahmed Hafez</strong>, <span>UX / UI Designer</span></p>
+                        <p><strong>Ahmed Hafez</strong>, <span className="job">UX / UI Designer</span></p>
                     </div>
                 </div>
                 <div>
@@ -33,7 +33,7 @@ const Reviews = () => {
                         <p className="revtext">
                             Our clients’ success stories powerfully underscore our deep commitment to surpassing expectations. Explore how our expertise brings about real, impactful results that not only elevate brands but also create enduring legacies.
                         </p>
-                        <p><strong>Ahmed Hafez</strong>, <span>UX / UI Designer</span></p>
+                        <p><strong>Ahmed Hafez</strong>, <span className="job">UX / UI Designer</span></p>
                     </div>
                 </div>
             </Carousel>
