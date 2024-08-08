@@ -15,10 +15,10 @@ const StatesSection = () => {
 			</p>
 			<hr />
 			<div className='stats-list'>
-				<StateCard title='Working Peoples' count={100} />
+				<StateCard title='Working Peoples' count={30} />
 				<StateCard title='World Office' count={1} />
-				<StateCard title='Project Complete' count={470} />
-				<StateCard title='Our Client' count={220} />
+				<StateCard title='Project Complete' count={70} />
+				<StateCard title='Our Client' count={55} />
 			</div>
 		</section>
 	);
