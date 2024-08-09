@@ -1,36 +1,38 @@
-import useScrollTrigger from '../../hooks/useScrollTrigger';
-import { memo, useCallback, useEffect, useState } from 'react';
+import { memo, useEffect, useRef, useState } from 'react';
+import useCountUp from '../../hooks/useCountUp';
 
-const StateCard = ({ title, count }: { title: string; count: number }) => {
-	const [curCount, setCurCount] = useState(0);
-	const [shouldStart] = useScrollTrigger(50); // Trigger at 50% scroll
-	
-	const handleAnimation = useCallback(() => {
-		let start = 0;
-		const end = count;
+const StateCard = ({ title, end, prefix }: { title: string; end: number; prefix?: string }) => {
+	const cardRef = useRef<HTMLDivElement | null>(null);
+	const [isVisible, setIsVisible] = useState<boolean>(false);
+	const count = useCountUp(isVisible ? end : 0, 2000);
 
-		if (shouldStart && count !== start) {
-			let timer = setInterval(() => {
-				start += 1;
-				setCurCount(start);
-				if (start === end) {
-					clearInterval(timer);
-					return;
-				}
-			}, 10);
+	const checkVisibility = () => {
+		if (cardRef.current) {
+			const rect = cardRef.current.getBoundingClientRect();
+			if (rect.top >= 0 && rect.bottom <= window.innerHeight ) {
+				setIsVisible(true);
+			} else {
+				setIsVisible(false);
+			}
 		}
-	}, [shouldStart, count]);
+	};
 
 	useEffect(() => {
-		if (shouldStart) {
-			handleAnimation();
-		}
-	}, [shouldStart, handleAnimation]);
+		window.addEventListener('scroll', checkVisibility);
+		checkVisibility();
+
+		return () => {
+			window.removeEventListener('scroll', checkVisibility);
+		};
+	}, []);
 
 	return (
-		<div className='state-card'>
+		<div className='state-card' ref={cardRef}>
 			<p>{title}</p>
-			<p>{curCount}</p>
+			<p>
+				{count}
+				{prefix && prefix}
+			</p>
 		</div>
 	);
 };

@@ -1,8 +1,10 @@
 import StateCard from '../../components/state_card/state_card';
 import blurSpot from '../../assets/blur-spot.png';
 import './style.css';
+import { useRef } from 'react';
 
 const StatesSection = () => {
+	const stateCardRef = useRef<HTMLDivElement | null>(null);
 	return (
 		<section className='stats-section'>
 			<div className='image-c'>
@@ -15,10 +17,10 @@ const StatesSection = () => {
 			</p>
 			<hr />
 			<div className='stats-list'>
-				<StateCard title='Working Peoples' count={30} />
-				<StateCard title='World Office' count={1} />
-				<StateCard title='Project Complete' count={70} />
-				<StateCard title='Our Client' count={55} />
+				<StateCard title='Working Peoples' end={30} prefix='+' />
+				<StateCard title='World Office' end={1} />
+				<StateCard title='Project Complete' end={70} prefix='+' />
+				<StateCard title='Our Client' end={55} />
 			</div>
 		</section>
 	);
