@@ -1,10 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { ToastContainer } from 'react-toastify';
 import Shadow from './assets/shadow.png';
 import Hero from './components/Hero/Hero';
-import "./style/App.css";
 import Loading from './components/Loading/Loading';
-import ServicesLoader from './components/Loading/ServicesLoader';
+import "./style/App.css";
 export default function App() {
 	const [loading, setLoading] = useState(true);
 

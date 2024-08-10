@@ -52,9 +52,6 @@ export default function NavBar() {
         <li>
           <a href="#service">Services</a>
         </li>
-        <li>
-          <a href="#/">Blog</a>
-        </li>
         <div style={{ fontWeight: "400" }} className="bg_nav_menu"></div>
         <div className="hrTag"></div>
         <li>
