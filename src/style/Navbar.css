@@ -101,7 +101,7 @@
 }
 
 .socialMediaMenu {
-  height: 5.5rem;
+  height: 7rem;
   display: grid;
   font-size: 1.2rem;
   grid-template-columns: auto auto auto;
@@ -154,7 +154,7 @@
     grid-template-columns: auto;
     font-size: 1rem;
     margin-bottom: 1rem;
-    min-height: 7rem;
+    height: 6rem;
   }
   .Navbar ul.show-menu {
     font-size: 1rem;
