@@ -154,7 +154,7 @@
     grid-template-columns: auto;
     font-size: 1rem;
     margin-bottom: 1rem;
-    height: 6rem;
+    height: auto;
   }
   .Navbar ul.show-menu {
     font-size: 1rem;
@@ -162,6 +162,6 @@
     z-index: 9999;
   }
   .bg_nav_menu {
-    max-height: 17%;
+    max-height: 14%;
   }
 }
