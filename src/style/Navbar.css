@@ -101,7 +101,7 @@
 }
 
 .socialMediaMenu {
-  min-height: 7rem;
+  height: 7rem;
   display: grid;
   font-size: 1.2rem;
   grid-template-columns: auto auto auto;
