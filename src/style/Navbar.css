@@ -162,6 +162,7 @@
     z-index: 9999;
   }
   .bg_nav_menu {
-    max-height: 14%;
+    max-height: 20%;
+    bottom:0;
   }
 }
