@@ -63,7 +63,10 @@
 }
 
 .shareIcon {
-  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .menuIcon {
@@ -98,7 +101,7 @@
 }
 
 .socialMediaMenu {
-  height: 4rem;
+  min-height: 7rem;
   display: grid;
   font-size: 1.2rem;
   grid-template-columns: auto auto auto;
@@ -106,6 +109,13 @@
   margin-top: 2rem;
   color: #919193;
   text-transform: capitalize;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding-left: 2.5rem;
+  background: #EEE;
+  padding-top: 1rem;
 }
 
 .socialMediaMenu :nth-child(n) {
@@ -121,7 +131,7 @@
   background: #eee;
   position: absolute;
   bottom: 0%;
-  height: 19%;
+  max-height: 17%;
   width: 123%;
   margin-left: -3rem;
   z-index: -1;
@@ -143,6 +153,8 @@
   .socialMediaMenu {
     grid-template-columns: auto;
     font-size: 1rem;
+    margin-bottom: 1rem;
+    min-height: 7rem;
   }
   .Navbar ul.show-menu {
     font-size: 1rem;
@@ -150,6 +162,6 @@
     z-index: 9999;
   }
   .bg_nav_menu {
-    height: 29%;
+    max-height: 17%;
   }
 }
