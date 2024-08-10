@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .Navbar {
   display: flex;
   height: 5rem;
@@ -22,24 +26,21 @@
   border-radius: 10px;
   transition: height 0.3s ease, opacity 0.3s ease;
   opacity: 0;
-  /* Initially hidden */
   pointer-events: none;
-  /* Prevent clicks when hidden */
   position: fixed;
   top: 0%;
   right: 1%;
+  z-index: 9999; /* Consistent z-index */
 }
 
 .Navbar ul.show-menu {
   padding: 2rem;
-  z-index: 9999;
   min-height: 36rem;
   width: 29rem;
   font-weight: 300;
   opacity: 1;
-  /* Fully visible */
   pointer-events: auto;
-  /* Enable clicks when visible */
+  overflow: hidden; /* Prevent scrollbars during transition */
 }
 
 .Navbar ul li {
@@ -76,8 +77,8 @@
   position: fixed;
   right: 3.5%;
   top: 1%;
-  cursor: pointer;
   z-index: 999;
+  aria-label: "Open Menu"; /* Accessibility improvement */
 }
 
 .close-menu-button {
@@ -90,6 +91,7 @@
   position: fixed;
   top: 1%;
   right: 3.5%;
+  aria-label: "Close Menu"; /* Accessibility improvement */
 }
 
 .logo {
@@ -101,7 +103,7 @@
 }
 
 .socialMediaMenu {
-  height: 7rem;
+  min-height: 7rem;
   display: grid;
   font-size: 1.2rem;
   grid-template-columns: auto auto auto;
@@ -114,27 +116,13 @@
   bottom: 0;
   left: 0;
   padding-left: 2.5rem;
-  background: #EEE;
+  background: #eee;
   padding-top: 1rem;
+  z-index: 9999; /* Ensure it stays on top */
 }
 
 .socialMediaMenu :nth-child(n) {
   cursor: pointer;
-}
-
-.hrTag {
-  height: 2px;
-  background: #eee;
-  width: 100%;
-}
-.bg_nav_menu {
-  background: #eee;
-  position: absolute;
-  bottom: 0%;
-  max-height: 17%;
-  width: 123%;
-  margin-left: -3rem;
-  z-index: -1;
 }
 
 @media (max-width: 500px) {
@@ -143,7 +131,6 @@
     top: 1%;
     right: -10.5%;
   }
-
   .socialMediaMenu {
     grid-template-columns: auto auto;
   }
@@ -153,16 +140,12 @@
   .socialMediaMenu {
     grid-template-columns: auto;
     font-size: 1rem;
-    margin-bottom: 1rem;
-    height: auto;
+    min-height: 7rem;
   }
   .Navbar ul.show-menu {
     font-size: 1rem;
-    width: 10rem;
+    width: 100%;
     z-index: 9999;
-  }
-  .bg_nav_menu {
-    max-height: 20%;
-    bottom:0;
+    height: 100%;
   }
 }

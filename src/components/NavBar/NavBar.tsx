@@ -43,6 +43,16 @@ const NavBar: React.FC = () => {
         {menuVisible ? "" : <TwoLinesIcon />}
       </div>
       <ul className={menuVisible ? "show-menu" : ""}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100%",
+          }}
+        >
+          <img src={logo} alt="Logo" />
+        </div>
         <button className="close-menu-button" onClick={handleCloseMenu}>
           <CloseIcon />
         </button>
