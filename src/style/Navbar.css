@@ -33,9 +33,17 @@ html {
   z-index: 9999; /* Consistent z-index */
 }
 
+.navTextParent {
+  min-height: 33.1vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 3rem;
+}
 .Navbar ul.show-menu {
-  padding: 2rem;
-  min-height: 36rem;
+  padding: 5rem 2rem 1rem;
+  min-height: 32rem;
   width: 29rem;
   font-weight: 300;
   opacity: 1;
@@ -50,6 +58,7 @@ html {
 .Navbar ul li a {
   text-decoration: none;
   color: black;
+  margin-bottom: 2rem;
 }
 
 .Navbar ul li a:hover {
@@ -68,17 +77,19 @@ html {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-bottom: 7rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-transform: capitalize;
 }
 
 .menuIcon {
-  font-size: 3rem;
-  color: #f12d03;
+  font-size: 2.5rem;
   cursor: pointer;
   position: fixed;
   right: 3.5%;
   top: 1%;
   z-index: 999;
-  aria-label: "Open Menu"; /* Accessibility improvement */
 }
 
 .close-menu-button {
@@ -91,7 +102,6 @@ html {
   position: fixed;
   top: 1%;
   right: 3.5%;
-  aria-label: "Close Menu"; /* Accessibility improvement */
 }
 
 .logo {
@@ -103,7 +113,7 @@ html {
 }
 
 .socialMediaMenu {
-  min-height: 7rem;
+  min-height: 5.4rem;
   display: grid;
   font-size: 1.2rem;
   grid-template-columns: auto auto auto;
@@ -125,11 +135,16 @@ html {
   cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .close-menu-button {
     width: 10rem;
     top: 1%;
     right: -10.5%;
+  }
+  #Line {
+    width: 100%;
+    margin-top: -5.2rem !important;
+    margin-bottom: -0.9rem !important;
   }
   .socialMediaMenu {
     grid-template-columns: auto auto;

@@ -50,16 +50,25 @@ const NavBar: React.FC = () => {
             alignItems: "center",
             width: "100%",
           }}
-        >
-          <img src={logo} alt="Logo" />
-        </div>
+        ></div>
         <button className="close-menu-button" onClick={handleCloseMenu}>
           <CloseIcon />
         </button>
-        <NavItem href="#">Home</NavItem>
-        <NavItem href="#work">Work</NavItem>
-        <NavItem href="#service">Services</NavItem>
-        <div className="bg_nav_menu"></div>
+        <div className="navTextParent">
+          <NavItem href="#">Home</NavItem>
+          <NavItem href="#work">Work</NavItem>
+          <NavItem href="#service">Services</NavItem>
+
+          <div className="bg_nav_menu"></div>
+        </div>
+        <hr
+          id="Line"
+          style={{
+            width: "100%",
+            marginTop: "-2.2rem",
+            marginBottom: "-0.9rem",
+          }}
+        />
         <div className="shareIcon">
           <NavItem href="#contact">Contact us</NavItem>
           <ContactUsIcon />
