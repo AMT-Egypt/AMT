@@ -1,16 +1,15 @@
 import StateCard from '../../components/state_card/state_card';
 import blurSpot from '../../assets/blur-spot.png';
 import './style.css';
-import { useRef } from 'react';
 
 const StatesSection = () => {
-	const stateCardRef = useRef<HTMLDivElement | null>(null);
 	return (
 		<section className='stats-section'>
 			<div className='image-c'>
 				<img src={blurSpot} alt='Red Circle Spot' />
 			</div>
 			<p>
+				<hr className='left-line'/>
 				Explore the heart of our studio—where numbers tell the story of our dedication, creativity,
 				and commitment to excellence. These statistics not only reflect our design prowess but also
 				showcase the tangible impact we make in the real world.

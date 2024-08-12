@@ -9,7 +9,7 @@ const StateCard = ({ title, end, prefix }: { title: string; end: number; prefix?
 	const checkVisibility = () => {
 		if (cardRef.current) {
 			const rect = cardRef.current.getBoundingClientRect();
-			if (rect.top >= 0 && rect.bottom <= window.innerHeight ) {
+			if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
 				setIsVisible(true);
 			} else {
 				setIsVisible(false);
